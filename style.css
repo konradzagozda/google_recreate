@@ -123,6 +123,7 @@ form p {
   margin: 20px;
   padding: 10px;
   color: #2F4ED9;
+  font-size: 0.9em;
 }
 
 form p a {
@@ -149,6 +150,7 @@ footer section {
 #footer {
   color: rgba(0,0,0,.54);
   background-color: #F2F2F2;
+  font-size: 0.9em;
 }
 
 #footer li, footer section p {
