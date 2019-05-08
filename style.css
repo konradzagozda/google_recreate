@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+input:focus, textarea {
+    outline: none !important;
+}
+
 body {
   min-width: 1000px;
 }
@@ -83,6 +87,7 @@ form input[type="submit"] , form button {
   border-radius: 5px;
   margin: 10px;
   opacity: 0.8;
+  border: 1px solid transparent;
 }
 
 form input[type="submit"]:hover , form button:hover {
@@ -95,4 +100,34 @@ form p {
 
   margin: 20px;
   padding: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(223,225,229);
+}
+
+footer section {
+  padding: 10px;
+  border-top: 1px solid grey;
+}
+
+#left {
+  float: left;
+}
+#left li {
+  display: inline-block;
+}
+#right {
+  float: right;
+  list-style-type: none;
+}
+#right li {
+  display: inline-block;
+}
+
+#bottom {
+  padding-bottom: 30px;
 }
