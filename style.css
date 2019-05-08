@@ -1,5 +1,13 @@
+html {
+  font-family: "arial", "Verdana", sans-serif;
+}
+
 * {
     box-sizing: border-box;
+}
+
+a {
+  color: inherit;
 }
 
 input:focus, textarea {
@@ -15,20 +23,31 @@ nav {
 }
 
 nav ul a {
+  position: relative;
+  right: 30px;
   display: inline-block;
-  padding: 5px 1px;
   margin-top: 15px;
   margin-right: 10px;
   color: black;
   font-size: 15px;
   text-decoration: none;
+  height: 30px;
+}
+
+nav ul li {
+  height: 30px;
+  line-height: 30px;
+}
+
+a:visited {
+  color: inherit;
 }
 
 #user-menu {
   width: 50px;
   height: 50px;
   text-align: center;
-  background-color: rgb(77,144,254);
+  background-color: #4497A7;
   border-radius: 25px;
   line-height: 50px;
   font-size: 20px;
@@ -39,6 +58,8 @@ nav ul a {
 #squares {
   opacity: 0.6;
   transition: 0.5s;
+  position: relative;
+  top: 5px;
 }
 #squares:hover {
   opacity: 0.9;
@@ -67,39 +88,49 @@ form img {
 form input[type="text"] {
   display: block;
   margin: 30px auto;
-  height: 38px;
+  height: 42px;
   min-width: 500px;
-  border-radius: 20px;
-  font-size: 20px;
+  border-radius: 19px;
+  font-size: 16px;
   padding: 0 20px;
+  border: 1px solid #9da2b7;
 }
 
-/*
-form input[type="text"]:active, form input[type="text"]:hover {
-  shape-outside:
+
+form input[type="text"]:active, form input[type="text"]:hover, form input[type="text"]:focus {
+  box-shadow: 1px 1px 3px #9da2b7, -1px -1px 3px #9da2b7;
 }
-*/
 
 form input[type="submit"] , form button {
   padding: 10px;
   font-size: 1.05em;
-  border: none;
   border-radius: 5px;
   margin: 10px;
   opacity: 0.8;
   border: 1px solid transparent;
+  background-color: #F2F3F2;
+  color: #27292d;
 }
 
 form input[type="submit"]:hover , form button:hover {
   border: 1px solid gray;
   opacity: 1;
+  cursor: pointer;
 }
 
 form p {
   display: block;
-
   margin: 20px;
   padding: 10px;
+  color: #2F4ED9;
+}
+
+form p a {
+  text-decoration: none;
+}
+
+form p a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -111,7 +142,21 @@ footer {
 
 footer section {
   padding: 10px;
-  border-top: 1px solid grey;
+  padding-left: 20px;
+  border-top: 1px solid #E4E4E4;
+}
+
+#footer {
+  color: rgba(0,0,0,.54);
+  background-color: #F2F2F2;
+}
+
+#footer li, footer section p {
+  padding: 0 10px;
+}
+
+#footer li:hover {
+  text-decoration: underline;
 }
 
 #left {
